@@ -48,6 +48,7 @@ class TestPluralizeList(TestCase):
 
 class TestReverseList(TestCase):
     def test_reverses(self):
+        odd_numbers = [1, 3, 5, 7, 9]
         expected = list(reversed(odd_numbers))
         observed = reverse_list(odd_numbers)
         self.assertTrue(isinstance(observed, list))
